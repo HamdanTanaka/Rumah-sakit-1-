@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <title>Registrasi Rumah Sakit</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <h1>Selamat Datang di Rumah Sakit Digital</h1>
+
+    <div id="form">
+        <p>
+            Masukkan data pasien:
+        </p>
+        <input type="text" id="namaPasien" placeholder="Nama Pasien">
+        <input type="number" id="umurPasien" placeholder="Umur Pasien">
+        <input type="text" id="alamatPasien" placeholder="Alamat Pasien">
+
+        <p>
+            Pilih jenis layanan:
+        </p>
+        <select id="pilihanLayanan">
+            <option value="1">BPJS</option>
+            <option value="2">Mandiri</option>
+        </select>
+        <div class="mb-3">
+            <label for="poli" class="form-label">Pilih Poli</label>
+            <select class="form-select" id="poli" required>
+                <option value="Umum">Umum</option>
+                <option value="Gigi">Gigi</option>
+                <option value="Anak">Anak</option>
+                <option value="Kandungan">Kandungan</option>
+            </select>
+        </div>
+
+        <p>
+            Tanggal kunjungan :
+        </p>
+        <label for="tanggalKunjungan">
+            <input type="date">
+        </label>
+        <button onclick="prosesPendaftaran()">Lanjut</button>
+    </div>
+
+    <div id="output"></div>
+
+    <footer>
+        &copy; M.Hamdan Alawi XI RPL 2025
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
